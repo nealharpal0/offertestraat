@@ -1,0 +1,55 @@
+{
+  "_uitleg": "Lettertypen die tools/build.py bij het bouwen in index.html zet. Bron: github.com/google/fonts op een vaste commit. 'axes' kiest de variant uit een variabel lettertype, 'unicodes' bepaalt welke tekens erin komen.",
+  "google_fonts_commit": "e44c4b011a820c2cbe2fd2cfa8052037d7edb571",
+  "fonts": [
+    {
+      "placeholder": "__FONT_display-700__",
+      "family": "Straat Display",
+      "weight": 700,
+      "source": "ofl/bigshoulders/BigShoulders[opsz,wght].ttf",
+      "axes": {
+        "opsz": 14,
+        "wght": 700
+      },
+      "unicodes": "0020-007E,00A0-00FF,0131,0152-0153,2013-2014,2018-201A,201C-201E,2022,2026,20AC,2190-2194,2212,2248"
+    },
+    {
+      "placeholder": "__FONT_sans-400__",
+      "family": "Straat Sans",
+      "weight": 400,
+      "source": "ofl/instrumentsans/InstrumentSans[wdth,wght].ttf",
+      "axes": {
+        "wdth": 100,
+        "wght": 400
+      },
+      "unicodes": "0020-007E,00A0-00A3,00A5,00A7-00AB,00AE-00B0,00B4,00B6-00B8,00BA-00BB,00BF-00FF,0131,0152-0153,2013-2014,2018-201A,201C-201E,2022,2026,20AC,2190-2194,2212"
+    },
+    {
+      "placeholder": "__FONT_sans-700__",
+      "family": "Straat Sans",
+      "weight": 700,
+      "source": "ofl/instrumentsans/InstrumentSans[wdth,wght].ttf",
+      "axes": {
+        "wdth": 100,
+        "wght": 700
+      },
+      "unicodes": "0020-007E,00A0-00A3,00A5,00A7-00AB,00AE-00B0,00B4,00B6-00B8,00BA-00BB,00BF-00FF,0131,0152-0153,2013-2014,2018-201A,201C-201E,2022,2026,20AC,2190-2194,2212"
+    },
+    {
+      "placeholder": "__FONT_mono-400__",
+      "family": "Straat Mono",
+      "weight": 400,
+      "source": "ofl/dmmono/DMMono-Regular.ttf",
+      "axes": {},
+      "unicodes": "0020-007E,00A0-00FF,0131,0152-0153,2013-2014,2018-201A,201C-201E,2022,2026,20AC,2212,2248"
+    },
+    {
+      "placeholder": "__FONT_hand-400__",
+      "family": "Straat Hand",
+      "weight": 400,
+      "source": "ofl/nothingyoucoulddo/NothingYouCouldDo.ttf",
+      "axes": {},
+      "unicodes": "0020-007E,00A0-00AC,00AE,00B0-00FF,0152-0153,2013-2014,2018-201A,201C-201E,2022,2026,20AC,2212"
+    }
+  ]
+}

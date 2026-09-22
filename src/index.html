@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>De offertestraat</title>
+<!--PWA-->
+<meta name="description" content="Animatie van het stappenplan: hoe Claude-agents samen een offerteaanvraag afhandelen, van mail tot calculatie.">
+<meta name="theme-color" content="#EEF2F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C1620" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icons/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Offertestraat">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<!--/PWA-->
+<style>
+/*@CSS*/
+</style>
+</head>
+<body>
+<!--BODY-->
+<div class="app" id="app">
+  <header class="top">
+    <div class="dim" id="dim" title="Tik om naar een stap te springen">
+      <span class="dim-app">Offertestraat</span>
+      <span class="dim-ext dim-ext--l"></span><span class="dim-ext dim-ext--r"></span>
+      <span class="dim-line"></span>
+      <span class="dim-fill" id="dimFill"></span>
+      <span class="dim-label" id="dimLabel">0:00</span>
+    </div>
+    <div class="mini" id="mini" aria-hidden="true"></div>
+  </header>
+  <main class="stage" id="stage">
+    <div class="cwrap" id="cwrap">
+      <div class="frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="canvas" id="canvas"></div>
+    </div>
+  </main>
+  <section class="tb" id="tb" aria-live="polite">
+    <div class="tb-blad"><span class="tb-k">Blad</span><span class="tb-no" id="tbNo">01</span></div>
+    <div class="tb-head"><span class="eyebrow" id="tbEyebrow"></span><h2 class="tb-title" id="tbTitle"></h2></div>
+    <p class="tb-text" id="tbText"></p>
+  </section>
+  <nav class="ctl" aria-label="Bediening">
+    <div class="ctl-group">
+      <button type="button" class="btn" id="bPrev" aria-label="Vorige stap"></button>
+      <button type="button" class="btn btn--main" id="bPlay" aria-label="Pauzeren"></button>
+      <button type="button" class="btn" id="bNext" aria-label="Volgende stap"></button>
+    </div>
+    <div class="ctl-group">
+      <button type="button" class="btn" id="bAuto" aria-label="Automatisch doorspelen" aria-pressed="true"></button>
+      <button type="button" class="btn btn--text" id="bList" aria-label="Alle stappen"></button>
+    </div>
+  </nav>
+</div>
+<dialog class="sheet" id="sheet" aria-labelledby="sheetTitle">
+  <div class="sheet-in">
+    <div class="sheet-head"><h2 id="sheetTitle">Stappen</h2><button type="button" class="btn" id="sheetClose" aria-label="Sluiten"></button></div>
+    <ol class="scene-list" id="sceneList"></ol>
+    <div class="row-toggle">
+      <label for="autoSwitch">Automatisch doorspelen<small>Uit: elke stap wacht tot je op › tikt.</small></label>
+      <input type="checkbox" class="switch" id="autoSwitch" checked>
+    </div>
+    <div class="install" id="install"></div>
+    <p class="sheet-foot">Gebaseerd op het handgeschreven stappenplan (concept 1). De klant en alle gegevens in het voorbeeld zijn verzonnen.</p>
+  </div>
+</dialog>
+<div class="toast" id="toast" role="status"></div>
+<noscript><p style="padding:24px">Deze animatie heeft JavaScript nodig.</p></noscript>
+<script>
+/*@JS*/
+</script>
+<!--/BODY-->
+</body>
+</html>
